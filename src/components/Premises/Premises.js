@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { setPremisyFilter } from "../../store/actions/authActions";
 
-function Premises() {
+const Premises = () => {
   const [menu, setMenu] = useState(false);
   const [premises, setPremises] = useState([]);
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ function Premises() {
     setPremises(tempPremises);
   }, [propertyList, areaFilter]);
 
-  function showMenu(e) {
+  const showMenu = e => {
     e.preventDefault();
     if (menu !== true) {
       setMenu(true);
@@ -35,15 +35,15 @@ function Premises() {
     } else if (menu === true) {
       setMenu(false);
     }
-  }
-  function closeMenu() {
+  };
+  const closeMenu = () => {
     setMenu(false);
     document.removeEventListener("click", closeMenu);
-  }
-  function handlePremisyClick(premisy) {
+  };
+  const handlePremisyClick = premisy => {
     setMenu(false);
     dispatch(setPremisyFilter(premisy));
-  }
+  };
 
   return (
     <div className={style.dropdown}>
@@ -61,6 +61,6 @@ function Premises() {
       ) : null}
     </div>
   );
-}
+};
 
 export default Premises;

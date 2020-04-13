@@ -6,12 +6,12 @@ import { useHistory } from "react-router-dom";
 import { login } from "../../store/actions/authActions";
 import auth from "../Auth/Auth";
 
-function Login() {
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   let history = useHistory();
-  function handleLogin(e) {
+  const handleLogin = e => {
     e.preventDefault();
     axios
       .post("https://datscha-fe-code-test-api.azurewebsites.net/login", {
@@ -31,7 +31,7 @@ function Login() {
       .catch(error => {
         console.log("Du angav fel uppgifter");
       });
-  }
+  };
   return (
     <div className={style.start}>
       <div className={style.textArea}>
@@ -54,6 +54,6 @@ function Login() {
       </div>
     </div>
   );
-}
+};
 
 export default Login;

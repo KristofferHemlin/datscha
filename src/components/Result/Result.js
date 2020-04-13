@@ -41,14 +41,14 @@ const Result = () => {
           {chosenProperty.name}
           {chosenProperty.premisesTypes.map(premisy => {
             return (
-              <>
+              <div>
                 <div>{premisy.type}</div>
-                <div>
+                <ul>
                   {calculateYearlyPremisyRent(premisy, 5).rents.map(rent => {
-                    return rent;
+                    return <li>{rent}</li>;
                   })}
-                </div>
-              </>
+                </ul>
+              </div>
             );
           })}
         </h2>

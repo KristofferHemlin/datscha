@@ -8,16 +8,16 @@ import axios from "axios";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Result from "../../components/Result/Result";
 
-function Index() {
+const Index = () => {
   const username = useSelector(state => state.username);
   const history = useHistory();
   const dispatch = useDispatch();
-  function sessionLogout() {
+  const sessionLogout = () => {
     dispatch(logout());
     auth.logout(() => {
       history.push("/");
     });
-  }
+  };
   useEffect(() => {
     axios
       .get("https://datscha-fe-code-test-api.azurewebsites.net/properties", {
@@ -47,6 +47,6 @@ function Index() {
       </div>
     </div>
   );
-}
+};
 
 export default Index;
