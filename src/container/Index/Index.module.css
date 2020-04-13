@@ -1,0 +1,30 @@
+.start {
+  margin: 10px;
+}
+.textArea {
+  text-align: center;
+  font-size: 32px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.button {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  background: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 16px;
+  border: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 600px) {
+}

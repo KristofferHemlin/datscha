@@ -1,0 +1,6 @@
+export const LOGIN = "LOGIN";
+export const LOGOUT = "LOGOUT";
+export const SET_AREA_FILTER = "SET_AREA_FILTER";
+export const SET_PREMISY_FILTER = "SET_PREMISY_FILTER";
+export const SET_CHOSEN_PROPERTY = "SET_CHOSEN_PROPERTY";
+export const SET_PROPERTIES = "SET_PROPERTIES";

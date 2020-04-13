@@ -1,0 +1,53 @@
+/* START Component */
+
+/* Phone */
+.start {
+  margin: 10px;
+}
+.textArea {
+  text-align: left;
+  font-size: 24px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.button {
+  text-align: left;
+  width: 80%;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  background: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+}
+input {
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 12px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+.button {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  background: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 16px;
+  border: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 600px) {
+}
